@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+<section class="container">
+
+    <div class="d-flex">
+        <div class="d-block align-items-center gap-5 py-4">
+            <img src="{% static 'Images\profile.jpg' %}" class="rounded-circle object-fit-cover" width="400"
+                height="400" alt="">
+
+            <div>
+                <h1 class="display-4 fw-bold mb-3 text-primary">Plants Project</h1>
+                <p class="lead text-muted mx-auto" style="max-width: 600px">Welcome to Plants Project. Discover, track,
+                    and
+                    care
+                    for
+                    your houseplants. Natural Beauty is important and to maintain it is by caring for plants.</p>
+            </div>
+
+        </div>
+        <div class="d-block align-items-center gap-5 py-4">
+            <img src="{% static 'images\pexels-tkirkgoz-16838924.jpg' %}" class="rounded-circle object-fit-cover"
+                width="400" height="400" alt="">
+
+            <div>
+                <h1 class="display-4 fw-bold mb-3 text-primary">Animals Project</h1>
+                <p class="lead text-muted mx-auto" style="max-width: 600px">Welcome to Animals Project. Discover, track,
+                    and
+                    care
+                    for
+                    animal life. Natural Beauty is important and to maintain it is by caring for plants.</p>
+            </div>
+
+        </div>
+
+    </div>
+   <div>
+     <h1 class="text-center display-4 fw-bold text-primary">Reach out!!</h1>
+        <div id="icons" class="text-center p-5 justify-content-between h-25">
+            <a href=""> <img class="px-2" src="{% static 'svgs\whatsapp-logo.svg' %}" width="80px" alt="">
+            </a>
+            <a href=""><img class="px-2" src="{% static 'svgs\twitter-logo.svg' %}" width="80px" alt=""></a>
+            <a href=""> <img class="px-2" src="{% static 'svgs\facebook-logo.svg' %}" width="80px" alt="">
+            </a>
+            <a href=""> <img class="px-2" src="{% static 'svgs\opera.svg' %}" width="80px" alt="">
+            </a>
+            <a href=""><img class="px-2" src="{% static 'svgs\github.svg' %}" width="80px" alt="">
+            </a>
+            <a href=""><img class="px-2" src="{% static 'svgs\youtube.svg' %}" width="80px" alt="">
+            </a>
+            <a href=""> <img class="px-2" src="{% static 'svgs\google.svg' %}" width="80px" alt="">
+            </a>
+
+        </div>
+   </div>
+</section>
+
+<!-- transform: translateY(-10px) -->
+
+{% endblock %}

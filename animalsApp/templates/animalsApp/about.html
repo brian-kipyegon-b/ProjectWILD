@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<section class="container">
+  <div class="d-flex gap-5">
+    <div>
+      <img class="rounded-circle object-fit-cover"
+        src="{% static 'images\pexels-danielle-tiley-2154883962-33837667.jpg' %}" width="400" height="400" alt="">
+    </div>
+    <div class="d-block w-50">
+      <div>
+        <h1>About PlantsProject</h1>
+        <p>PlantsProject started as a simple idea: help people keep their houseplants alive.I am Brian a beginner
+          developer using Django and Bootstrap to build tools that make plants care easy and fun.</p>
+      </div>
+      <div>
+        <h5>What this app does:</h5>
+        <ul>
+          <li>Track Watering schedule for your plants</li>
+          <li>Get light and care tips for each species</li>
+          <li>Built with Django + Bootstrap for mobile use</li>
+        </ul>
+        <a href="{% url 'animals-home' %}" class="btn btn-outline-success mt-4">Back To Home</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex gap-5 mt-5">
+    <div class="w-50 bg-secondary d-flex flex-column align-items-center rounded-3 ">
+      <h1 class="fw-bold display-4 text-primary rounded-pill">ANIMALS</h1>
+
+      <img class=" object-fit-cover rounded-5  " src="{% static 'images\pexels-tkirkgoz-16838924.jpg' %}" height="400"
+          alt="">
+
+      <button type="button" class="btn btn-outline-warning py-2 my-3 text-white btn-lg">Learn more about Animals</button>
+
+    </div>
+    <div class="w-50 bg-secondary d-flex flex-column align-items-center rounded-3 ">
+      <h1 class="fw-bold display-4 text-primary rounded-pill">ANIMALS</h1>
+
+      <img class=" object-fit-cover rounded-5  " src="{% static 'images\about.jpg' %}" height="400"
+          alt="">
+
+      <button type="button" class="btn btn-outline-warning py-2 my-3 text-white btn-lg">Learn more about Plants</button>
+
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid py-5 m-0 pt-500px">
+      <div class="fw-bold container text-center text-primary pt-3">
+      <h1>© Website Build By Brian</h1>
+    </div>
+<img class="mb-0 mt-5 pb-0 pt-5" src="{% static 'svgs\wavesNegative.svg' %}" width="100%"  alt="">
+</section>
+
+
+
+
+{% endblock %}
