@@ -2,6 +2,24 @@
 {% load static %}
 {% block content %}
 
+<div class="container">
+    {% for car in data %}
+    <h1>{{car.name}}</h1>
+    <p>{{car.description}}</p>
+    <h6>Fuel Type:
+        {% if fuel_type == "D" %}
+        Diesel
+        {% else %}
+        Petrol
+        {% endif %}
+    </h6>
+    <hr>
+
+    {% endfor %}
+
+
+
+</div>
 
 
 {% endblock %}

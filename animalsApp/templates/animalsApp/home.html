@@ -35,8 +35,8 @@
         </div>
 
     </div>
-   <div>
-     <h1 class="text-center display-4 fw-bold text-primary">Reach out!!</h1>
+    <div>
+        <h1 class="text-center display-4 fw-bold text-primary">Reach out!!</h1>
         <div id="icons" class="text-center p-5 justify-content-between h-25">
             <a href=""> <img class="px-2" src="{% static 'svgs\whatsapp-logo.svg' %}" width="80px" alt="">
             </a>
@@ -53,9 +53,26 @@
             </a>
 
         </div>
-   </div>
+    </div>
 </section>
 
-<!-- transform: translateY(-10px) -->
+
+ <div class="d-flex gap-5 container">
+    {% for animal in data %} 
+
+    <div class="card" style="width: 30%;">
+        <img src="{{animal.image}}" class="card-img-top object-fit-cover" alt="..." width="200px" height="200px">
+        <div class="card-body">
+            <div class="fs-4 fw-bold text-center">{{animal.name}}</div>
+            <h6 class="fs-5 text-warning text-secondary">{{animal.species}}</h6>
+          <p class="card-text lead fs-6 text-truncate" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{{animal.bio}}</p>
+        </div>
+      </div>
+
+ {% endfor %}
+
+
+ </div>
+
 
 {% endblock %}

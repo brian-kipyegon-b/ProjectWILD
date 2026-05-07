@@ -1,16 +1,22 @@
 from django.shortcuts import render
+from .models import Animal
+from plantsApp.models import Car
+from plantsApp.models import Plant 
 
 # Create your views here.
 def home(request):
-    context = {}
+    animals = Animal.objects.all
+    context = {"data": animals}
     return render(request, 'animalsApp/home.html', context)
 
 def about(request):
-    context = {}
+    plants = Plant.objects.all
+    context = { "data": plants}
     return render(request, 'animalsApp/about.html', context)   
 
 def species(request):
-    context = {}
+    cars = Car.objects.all
+    context = {"data": cars}
     return render(request, 'plantsApp/species.html', context)   
 
 def locations(request):

@@ -48,6 +48,15 @@
   </div>
 </section>
 
+<div class="container my-5">
+   {% for plant in data %}
+    <h1>{{plant.name}}</h1>
+    <p>{{plant.description}}</p>
+    <p>{{plant.Description}}</p>
+    <hr>
+{% endfor %}
+</div>
+
 <section class="container-fluid py-5 m-0 pt-500px">
       <div class="fw-bold container text-center text-primary pt-3">
       <h1>© Website Build By Brian</h1>
